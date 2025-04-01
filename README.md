@@ -1,3 +1,3 @@
-# Trump-Watch
+# Everything Trump
 
-Live-updating public dashboard for presidential promises, profits, and taxpayer spending. Powered by Google Sheets.
+Real-time tracker for Trump’s presidency, promises, taxpayer spending, and earnings. Built for public transparency. Auto-updates from Google Sheets.

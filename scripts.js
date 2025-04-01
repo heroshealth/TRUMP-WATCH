@@ -21,7 +21,6 @@ function formatDuration(ms) {
 
 setInterval(updateClocks, 1000);
 
-// Google Sheets placeholders — these will connect to your sheet later
 document.getElementById("costTracker").innerHTML = `
   <p>Golf: $150,000,000</p>
   <p>Properties: $17,100,000</p>
