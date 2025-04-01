@@ -1,3 +1,3 @@
 # Everything Trump
 
-Live accountability dashboard for presidential performance.
+Live-updating public dashboard for presidential promises, profits, and taxpayer spending. Powered by Google Sheets.

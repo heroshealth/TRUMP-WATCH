@@ -5,7 +5,6 @@ function updateClocks() {
   const now = new Date();
   const timeInOffice = now - termStart;
   const timeLeft = termEnd - now;
-
   document.getElementById('timeInOffice').innerText = formatDuration(timeInOffice);
   document.getElementById('timeLeft').innerText = formatDuration(timeLeft);
 }
@@ -21,3 +20,23 @@ function formatDuration(ms) {
 }
 
 setInterval(updateClocks, 1000);
+
+// Google Sheets placeholders — these will connect to your sheet later
+document.getElementById("costTracker").innerHTML = `
+  <p>Golf: $150,000,000</p>
+  <p>Properties: $17,100,000</p>
+  <p>Other: $11,000,000</p>
+`;
+
+document.getElementById("profitsTable").innerHTML = `
+  <tr><th>Source</th><th>Amount</th><th>Date</th></tr>
+  <tr><td>Mar-a-Lago</td><td>$400,000+</td><td>2017–2021</td></tr>
+  <tr><td>Trump Tower</td><td>$1,200,000</td><td>2016–2020</td></tr>
+  <tr><td>Trump D.C. Hotel</td><td>$3,000,000+</td><td>2017–2021</td></tr>
+`;
+
+document.getElementById("promisesTable").innerHTML = `
+  <tr><th>Promise</th><th>Status</th><th>Notes</th></tr>
+  <tr><td>Build the wall</td><td>Partially Fulfilled</td><td>Incomplete coverage</td></tr>
+  <tr><td>Repeal Obamacare</td><td>Not Fulfilled</td><td>Senate blocked repeal</td></tr>
+`;

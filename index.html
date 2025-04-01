@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Everything Trump</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
     <h1>Everything Trump</h1>
-    <p>Tracking presidential performance and accountability in real time</p>
+    <p>Tracking presidential promises, profits, and taxpayer costs</p>
   </header>
 
   <section id="clocks">
     <h2>Live Clocks</h2>
-    <div class="clock-box">
+    <div>
       <h3>Time in Office</h3>
       <div id="timeInOffice"></div>
       <h3>Time Until End of Term</h3>
@@ -24,7 +24,6 @@
 
   <section id="videoPromises">
     <h2>Trump Video Promises</h2>
-    <p>These videos are archived for public transparency and informational purposes only.</p>
     <div class="video-gallery">
       <iframe width="360" height="215" src="https://www.youtube.com/embed/Pwrs4VH_Stw" frameborder="0" allowfullscreen></iframe>
       <iframe width="360" height="215" src="https://www.youtube.com/embed/tm4XtTCSvGk" frameborder="0" allowfullscreen></iframe>
@@ -34,53 +33,21 @@
 
   <section id="costs">
     <h2>Taxpayer Costs</h2>
-    <div id="costTracker">
-      <p>Total Spent on Golf: <span id="golfCost">$150,000,000</span></p>
-      <p>Stays at Trump Properties: <span id="propertyCost">$17,100,000</span></p>
-      <p>Other Government Spending: <span id="otherCost">$11,000,000</span></p>
-    </div>
+    <div id="costTracker"></div>
   </section>
 
   <section id="profits">
     <h2>Trump Organization Earnings</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Source</th>
-          <th>Amount</th>
-          <th>Date</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>Mar-a-Lago (Secret Service)</td><td>$400,000+</td><td>2017–2021</td></tr>
-        <tr><td>Trump Tower (Campaign + Gov)</td><td>$1,200,000</td><td>2016–2020</td></tr>
-        <tr><td>Trump D.C. Hotel (Foreign Officials)</td><td>$3,000,000+</td><td>2017–2021</td></tr>
-        <tr><td><strong>Total Estimated</strong></td><td><strong>$16,000,000+</strong></td><td></td></tr>
-      </tbody>
-    </table>
+    <table id="profitsTable"><tbody></tbody></table>
   </section>
 
   <section id="promises">
     <h2>Promises Tracker</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Promise</th>
-          <th>Status</th>
-          <th>Notes</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>Build the wall</td><td>Partially Fulfilled</td><td>Portions built, not full coverage</td></tr>
-        <tr><td>Repeal Obamacare</td><td>Not Fulfilled</td><td>Attempts failed in Senate</td></tr>
-        <tr><td>Bring back manufacturing jobs</td><td>Mixed Results</td><td>Temporary gains, long-term unclear</td></tr>
-      </tbody>
-    </table>
+    <table id="promisesTable"><tbody></tbody></table>
   </section>
 
   <footer>
-    <p>Sources: OpenSecrets, CREW, GAO, American Oversight</p>
-    <p>Nonpartisan, fact-based, public accountability resource</p>
+    <p>Data updates live from Google Sheets</p>
   </footer>
 
   <script src="scripts.js"></script>
